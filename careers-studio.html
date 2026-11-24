@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers at Studio | Mittal Associates &amp; Architecture — Jaipur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+:root {
+  --navy: #071937;
+  --navy-deep: #041024;
+  --navy-mid: #102d5e;
+  --royal: #17469e;
+  --blue-bright: #2563eb;
+  --white: #ffffff;
+  --offwhite: #f7f9fc;
+  --soft-blue: #eef3fb;
+  --gold: #f5b700;
+  --gold-light: #ffd43b;
+  --gold-deep: #b88400;
+  --text-dark: #0b192c;
+  --text-muted: #4b5d78;
+  --border: rgba(7, 25, 55, 0.12);
+  --shadow-lg: 0 22px 50px rgba(7, 25, 55, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--white);
+  color: var(--text-dark);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+}
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+.font-grotesk {
+  font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+}
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Top Utility Bar */
+.top-utility {
+  background: var(--navy-deep);
+  color: var(--white);
+  font-size: 12.5px;
+  padding: 8px 24px;
+  border-bottom: 1px solid rgba(245, 183, 0, 0.25);
+}
+
+.top-utility-inner {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.top-utility .gold-dot {
+  color: var(--gold-light);
+  font-weight: 700;
+}
+
+.top-utility-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Blinking Call Button Animation */
+@keyframes callBlinkPulse {
+  0%, 100% {
+    background-color: var(--gold);
+    color: var(--navy-deep);
+    box-shadow: 0 0 0 0 rgba(245, 183, 0, 0.8), 0 4px 14px rgba(245, 183, 0, 0.35);
+    transform: scale(1);
+  }
+  50% {
+    background-color: var(--gold-light);
+    color: var(--navy-deep);
+    box-shadow: 0 0 0 8px rgba(245, 183, 0, 0), 0 6px 20px rgba(255, 212, 59, 0.65);
+    transform: scale(1.03);
+  }
+}
+
+.btn-call-blink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--gold);
+  color: var(--navy-deep);
+  font-weight: 800;
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  animation: callBlinkPulse 1.35s infinite ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+}
+
+.btn-call-blink.lg {
+  padding: 12px 22px;
+  font-size: 14px;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #128c4a;
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-whatsapp:hover {
+  background: #16a358;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(18, 140, 74, 0.35);
+}
+
+.btn-whatsapp.lg {
+  padding: 12px 22px;
+  font-size: 14px;
+}
+
+.btn-sms {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--royal);
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(245, 183, 0, 0.45);
+  cursor: pointer;
+}
+
+.btn-sms:hover {
+  background: var(--blue-bright);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(23, 70, 158, 0.35);
+}
+
+.btn-sms.lg {
+  padding: 12px 22px;
+  font-size: 14px;
+}
+
+.btn-map {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--white);
+  color: var(--navy-deep);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  border: 1.5px solid var(--gold);
+  transition: all 0.22s ease;
+}
+
+.btn-map:hover {
+  background: var(--soft-blue);
+  transform: translateY(-2px);
+}
+
+.btn-map.lg {
+  padding: 12px 22px;
+  font-size: 14px;
+}
+
+/* Main Header & Logo Match */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--navy);
+  box-shadow: 0 6px 24px rgba(7, 25, 55, 0.08);
+}
+
+.header-inner {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand-logo-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  background: var(--navy);
+  padding: 6px 14px 6px 8px;
+  border-radius: 10px;
+  border: 1.5px solid var(--gold);
+  box-shadow: 0 6px 18px rgba(7, 25, 55, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.brand-logo-box:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(7, 25, 55, 0.26);
+}
+
+.brand-logo-box img {
+  height: 44px;
+  width: auto;
+  border-radius: 6px;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-text-stack {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-name-main {
+  font-family: 'Cinzel', Georgia, serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  color: var(--white);
+}
+
+.brand-name-sub {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-pill {
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  transition: all 0.22s ease;
+  border: 1px solid transparent;
+}
+
+.nav-pill:hover {
+  background: var(--soft-blue);
+  color: var(--royal);
+  border-color: rgba(23, 70, 158, 0.2);
+}
+
+.nav-pill.active {
+  background: var(--navy);
+  color: var(--white);
+  border-bottom: 2.5px solid var(--gold);
+}
+
+.menu-drawer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--navy);
+  color: var(--white);
+  border: 1.5px solid var(--gold);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 12.5px;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.menu-drawer-btn:hover {
+  background: var(--royal);
+}
+
+/* All 20 Pages Drawer */
+.pages-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 16, 36, 0.72);
+  backdrop-filter: blur(5px);
+  z-index: 1200;
+  display: none;
+  justify-content: flex-end;
+}
+
+.pages-drawer-backdrop.open {
+  display: flex;
+}
+
+.pages-drawer {
+  width: min(460px, 94vw);
+  background: var(--white);
+  height: 100%;
+  overflow-y: auto;
+  padding: 26px;
+  box-shadow: -14px 0 40px rgba(4, 16, 36, 0.35);
+  border-left: 4px solid var(--gold);
+}
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 18px;
+}
+
+.drawer-close {
+  background: var(--navy);
+  color: var(--white);
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.drawer-group-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--gold-deep);
+  margin: 16px 0 8px;
+}
+
+.drawer-link-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.drawer-page-link {
+  display: block;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--offwhite);
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 13px;
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.drawer-page-link:hover,
+.drawer-page-link.current {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--gold);
+}
+
+/* Full-Bleed Hero Showcase */
+.full-bleed-hero {
+  position: relative;
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--navy-deep);
+}
+
+.full-bleed-hero img.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.62) contrast(1.06) saturate(1.08);
+  transform: scale(1.03);
+  transition: transform 8s ease-out;
+}
+
+.full-bleed-hero:hover img.hero-bg-img {
+  transform: scale(1.08);
+}
+
+.hero-gradient-scrim {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    95deg,
+    rgba(4, 16, 36, 0.92) 0%,
+    rgba(7, 25, 55, 0.78) 52%,
+    rgba(7, 25, 55, 0.28) 100%
+  );
+  padding: 64px 24px;
+}
+
+.hero-content-wrap {
+  max-width: 1360px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245, 183, 0, 0.16);
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+/* Text Animations */
+@keyframes textSlideReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(28px);
+    clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.anim-headline {
+  font-size: clamp(2.2rem, 4.8vw, 4.1rem);
+  line-height: 1.12;
+  font-weight: 700;
+  color: var(--white);
+  max-width: 820px;
+  animation: textSlideReveal 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.anim-headline .gold-highlight {
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 35%, #fff3b0 50%, var(--gold) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldShimmer 4.5s linear infinite;
+}
+
+.kinetic-subline-box {
+  margin-top: 18px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.kinetic-subline {
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  color: #e6eefc;
+  font-weight: 500;
+  border-left: 3px solid var(--gold);
+  padding-left: 14px;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.hero-cta-row {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Sections & Cards with 3D Tilt + Entrance Animations */
+.section-block {
+  padding: 76px 24px;
+}
+
+.section-block.alt-bg {
+  background: var(--offwhite);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.section-block.navy-band {
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, var(--navy-mid) 100%);
+  color: var(--white);
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.section-eyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--royal);
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.navy-band .section-eyebrow {
+  color: var(--gold-light);
+}
+
+.section-heading {
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  line-height: 1.2;
+  color: var(--navy);
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.navy-band .section-heading {
+  color: var(--white);
+}
+
+.section-lead {
+  color: var(--text-muted);
+  max-width: 740px;
+  font-size: 1.02rem;
+}
+
+.navy-band .section-lead {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.reveal-item {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cards-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 26px;
+  margin-top: 38px;
+}
+
+.anim-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--royal);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(7, 25, 55, 0.07);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+  display: flex;
+  flex-direction: column;
+}
+
+.anim-card:hover {
+  transform: translateY(-8px) rotateX(2deg) rotateY(-2deg);
+  box-shadow: var(--shadow-lg);
+  border-top-color: var(--gold);
+}
+
+.anim-card .card-img-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background: var(--navy);
+}
+
+.anim-card .card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.anim-card:hover .card-img-wrap img {
+  transform: scale(1.07);
+}
+
+.card-body {
+  padding: 22px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.28rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.card-text {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  margin-bottom: 18px;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+}
+
+.card-link-btn {
+  text-decoration: none;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--royal);
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--soft-blue);
+  transition: all 0.2s ease;
+}
+
+.card-link-btn:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+/* One-Click Service Triggers Bar */
+.one-click-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.service-quick-tile {
+  background: var(--white);
+  color: var(--text-dark);
+  border-radius: 14px;
+  padding: 16px;
+  border-left: 4px solid var(--gold);
+  box-shadow: 0 10px 24px rgba(4, 16, 36, 0.16);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  transition: transform 0.25s ease;
+}
+
+.service-quick-tile:hover {
+  transform: translateY(-4px);
+}
+
+.service-quick-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--navy);
+}
+
+.service-quick-btns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Jaipur Address & Complete Pages Directory */
+.jaipur-address-card {
+  background: var(--soft-blue);
+  border-left: 5px solid var(--gold);
+  border-radius: 14px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.all-pages-index {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.page-directory-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 13.5px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(7, 25, 55, 0.04);
+  transition: all 0.22s ease;
+}
+
+.page-directory-chip:hover {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--gold);
+  transform: translateY(-3px);
+}
+
+.page-directory-chip span.arrow {
+  color: var(--gold-deep);
+  font-weight: 800;
+}
+
+.page-directory-chip:hover span.arrow {
+  color: var(--gold-light);
+}
+
+/* Footer */
+.site-footer {
+  background: var(--navy-deep);
+  color: var(--white);
+  padding: 56px 24px 28px;
+  border-top: 4px solid var(--gold);
+}
+
+.footer-grid {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+}
+
+.footer-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.84);
+  text-decoration: none;
+  font-size: 13.5px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--gold-light);
+}
+
+.footer-bottom {
+  max-width: 1360px;
+  margin: 36px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+  .full-bleed-hero {
+    min-height: 70vh;
+  }
+}
+
+
+/* Premium brand system */
+:root {
+  --navy: #061b3b;
+  --navy-deep: #031126;
+  --navy-mid: #0c2b56;
+  --gold: #c9a45c;
+  --gold-light: #e7ca8a;
+  --gold-deep: #9d7737;
+}
+.main-header {
+  background: rgba(4, 19, 42, .97) !important;
+  border-bottom: 1px solid rgba(201,164,92,.48) !important;
+  box-shadow: 0 12px 34px rgba(3,17,38,.18) !important;
+}
+.header-inner { min-height: 86px; }
+.brand-logo-box {
+  background: #061b3b !important;
+  border: 1px solid rgba(201,164,92,.5) !important;
+  border-radius: 8px !important;
+  padding: 3px !important;
+  box-shadow: 0 8px 22px rgba(0,0,0,.2) !important;
+  overflow: hidden;
+}
+.brand-logo-box img {
+  display: block;
+  width: 184px !important;
+  height: 76px !important;
+  max-width: 38vw;
+  object-fit: contain !important;
+  border-radius: 5px !important;
+}
+.brand-text-stack { display:none !important; }
+.desktop-nav .nav-pill {
+  color: rgba(255,255,255,.86) !important;
+  border-radius: 5px !important;
+  letter-spacing: .015em;
+}
+.desktop-nav .nav-pill:hover,
+.desktop-nav .nav-pill.active {
+  color: var(--gold-light) !important;
+  background: rgba(201,164,92,.12) !important;
+}
+.menu-drawer-btn {
+  color: #f8f5ef !important;
+  background: rgba(201,164,92,.12) !important;
+  border: 1px solid rgba(201,164,92,.65) !important;
+  border-radius: 5px !important;
+}
+.menu-drawer-btn span:last-child { display:none; }
+.mobile-app-nav {
+  display:none;
+}
+.mobile-app-nav svg { width:21px; height:21px; stroke-width:1.8; }
+@media (max-width: 768px) {
+  body { padding-bottom: calc(78px + env(safe-area-inset-bottom)); }
+  .top-utility { display:none !important; }
+  .main-header { top:0; }
+  .header-inner { min-height:66px; padding:5px 12px; gap:8px; }
+  .brand-logo-box { padding:2px !important; }
+  .brand-logo-box img {
+    width:148px !important; height:57px !important; max-width:48vw;
+  }
+  .desktop-nav { display:none !important; }
+  .menu-drawer-btn {
+    min-height:42px; padding:9px 13px !important;
+    font-size:12px; font-weight:700; letter-spacing:.04em;
+  }
+  .mobile-app-nav {
+    position:fixed; inset:auto 0 0; z-index:5000;
+    display:grid !important; grid-template-columns:repeat(5,minmax(0,1fr));
+    padding:8px 5px calc(8px + env(safe-area-inset-bottom));
+    background:rgba(3,17,38,.97);
+    border-top:1px solid rgba(201,164,92,.55);
+    box-shadow:0 -10px 30px rgba(3,17,38,.2);
+    backdrop-filter:blur(18px);
+  }
+  .mobile-app-nav a, .mobile-app-nav button {
+    min-width:0; border:0; background:transparent;
+    color:rgba(255,255,255,.72); text-decoration:none;
+    display:flex; flex-direction:column; align-items:center;
+    justify-content:center; gap:4px; padding:3px 1px;
+    font:600 10px/1.15 'Plus Jakarta Sans',sans-serif;
+    cursor:pointer; -webkit-tap-highlight-color:transparent;
+  }
+  .mobile-app-nav a.active { color:var(--gold-light); }
+  .mobile-app-nav a.active svg { filter:drop-shadow(0 0 5px rgba(231,202,138,.25)); }
+  .mobile-app-nav .mobile-nav-cta { color:var(--gold-light); }
+  .mobile-app-nav a:active, .mobile-app-nav button:active { transform:scale(.94); }
+  .full-bleed-hero { min-height:60vh; }
+}
+@media (min-width:769px) { .mobile-app-nav { display:none !important; } }
+
+</style>
+</head>
+<body class="font-body">
+
+  <!-- Top Utility Bar -->
+  <div class="top-utility">
+    <div class="top-utility-inner">
+      <div>
+        <span class="gold-dot">●</span> <strong>Mittal Associates &amp; Architecture</strong> — D-6/252, near Vaishali Nagar, Akruti Apartments, Chitrakoot, Jaipur, Jaipur Nagar Nigam Area, Rajasthan 302021
+      </div>
+      <div class="top-utility-actions">
+        <a class="btn-call-blink" href="tel:09928610202">Call: 09928610202</a>
+        <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Studio%20Careers%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp: Studio Careers</a>
+        <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Studio%20Careers%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS: Studio Careers</a>
+        <a class="btn-map" target="_blank" rel="noopener" href="https://maps.app.goo.gl/PtvAL3n4BeiA9UTv5">Google Maps</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header Matching Logo Palette -->
+  <header class="main-header">
+    <div class="header-inner">
+      <a class="brand-logo-box" href="index.html">
+        <img src="assets/mittal-associates-original-logo.png" alt="Mittal Associates & Architecture" />
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a class="nav-pill " href="index.html">Home</a><a class="nav-pill " href="about-us.html">About Us</a><a class="nav-pill " href="architectural-design.html">Architecture</a><a class="nav-pill " href="interior-design.html">Interiors</a><a class="nav-pill " href="luxury-villas.html">Luxury Villas</a><a class="nav-pill " href="commercial-spaces.html">Commercial</a><a class="nav-pill " href="portfolio-showcase.html">Portfolio</a><a class="nav-pill " href="contact-jaipur.html">Contact Jaipur</a>
+      </nav>
+
+      <button type="button" class="menu-drawer-btn" onclick="openPagesDrawer()">
+        <span>Explore</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Slide-out Drawer with All 20 Pages -->
+  <div id="pagesDrawerBackdrop" class="pages-drawer-backdrop" onclick="if(event.target===this)closePagesDrawer()">
+    <aside class="pages-drawer" aria-label="Explore Studio">
+      <div class="drawer-header">
+        <div>
+          <div style="font-family:'Cinzel',serif;font-weight:700;color:var(--navy);font-size:16px;">MITTAL ASSOCIATES</div>
+          <div style="font-size:12px;color:var(--text-muted);">Chitrakoot, Jaipur Studio</div>
+        </div>
+        <button type="button" class="drawer-close" onclick="closePagesDrawer()" aria-label="Close menu">✕</button>
+      </div>
+      <div class="drawer-group-title">Overview</div>
+<div class="drawer-link-grid">
+<a class="drawer-page-link " href="index.html">Home</a>
+<a class="drawer-page-link " href="about-us.html">About Us</a>
+</div>
+<div class="drawer-group-title">Design Verticals</div>
+<div class="drawer-link-grid">
+<a class="drawer-page-link " href="architectural-design.html">Architecture</a>
+<a class="drawer-page-link " href="interior-design.html">Interiors</a>
+<a class="drawer-page-link " href="luxury-villas.html">Luxury Villas</a>
+<a class="drawer-page-link " href="commercial-spaces.html">Commercial</a>
+<a class="drawer-page-link " href="hospitality-resorts.html">Hospitality</a>
+<a class="drawer-page-link " href="urban-planning.html">Master Planning</a>
+<a class="drawer-page-link " href="landscape-architecture.html">Landscape</a>
+<a class="drawer-page-link " href="3d-visualization.html">3D &amp; BIM</a>
+</div>
+<div class="drawer-group-title">Execution &amp; Craft</div>
+<div class="drawer-link-grid">
+<a class="drawer-page-link " href="turnkey-execution.html">Turnkey Build</a>
+<a class="drawer-page-link " href="renovation-restoration.html">Renovation</a>
+<a class="drawer-page-link " href="custom-furniture.html">Bespoke Joinery</a>
+<a class="drawer-page-link " href="material-library.html">Material Studio</a>
+<a class="drawer-page-link " href="vastu-sustainable.html">Vastu &amp; Green</a>
+</div>
+<div class="drawer-group-title">Portfolio &amp; Trust</div>
+<div class="drawer-link-grid">
+<a class="drawer-page-link " href="portfolio-showcase.html">Portfolio</a>
+<a class="drawer-page-link " href="process-timeline.html">Our Process</a>
+<a class="drawer-page-link " href="client-stories.html">Testimonials</a>
+<a class="drawer-page-link current" href="careers-studio.html">Careers</a>
+<a class="drawer-page-link " href="contact-jaipur.html">Contact Jaipur</a>
+</div>
+    </aside>
+  </div>
+
+  <!-- Full-Bleed Architectural Photograph Hero -->
+  <section class="full-bleed-hero">
+    <img class="hero-bg-img" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Careers at Studio in Jaipur" />
+    <div class="hero-gradient-scrim">
+      <div class="hero-content-wrap">
+        <div class="hero-badge">✦ Join Our Jaipur Design Team</div>
+        <h1 class="anim-headline font-grotesk">Build Meaningful Architecture in <span class="gold-highlight">Jaipur</span></h1>
+        <div class="kinetic-subline-box">
+          <p id="kineticSubline" class="kinetic-subline"></p>
+        </div>
+        <div class="hero-cta-row">
+          <a class="btn-call-blink lg" href="tel:09928610202">Call 09928610202</a>
+          <a class="btn-whatsapp lg" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Studio%20Careers%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp (Studio Careers)</a>
+          <a class="btn-sms lg" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Studio%20Careers%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS (Studio Careers)</a>
+          <a class="btn-map lg" target="_blank" rel="noopener" href="https://maps.app.goo.gl/PtvAL3n4BeiA9UTv5">Location Map</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Services & Animated 3D Cards -->
+  <section class="section-block">
+    <div class="container">
+      <span class="section-eyebrow">Jaipur Design &amp; Build</span>
+      <h2 class="section-heading font-grotesk">Careers at Studio — Jaipur Studio</h2>
+      <p class="section-lead">
+        Crisp white, royal navy blue, and warm gold accents crafted for homes, villas, offices, and commercial spaces across Chitrakoot, Vaishali Nagar, and Jaipur Nagar Nigam Area.
+      </p>
+
+      <div class="cards-grid-3">
+        
+        <article class="anim-card reveal-item">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Contact &amp; Jaipur Studio" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div>
+              <span class="section-eyebrow" style="margin-bottom:4px;">D-6/252, Akruti Apartments, Chitrakoot, Jaipur</span>
+              <h3 class="card-title font-display">Contact &amp; Jaipur Studio</h3>
+              <p class="card-text">D-6/252, near Vaishali Nagar, Akruti Apartments, Chitrakoot, Jaipur, Jaipur Nagar Nigam Area, Rajasthan 302021. One-Click Call, Service WhatsApp &amp; Service SMS to 09928610202.</p>
+            </div>
+            <div class="card-actions">
+              <a class="card-link-btn" href="contact-jaipur.html">Open Page</a>
+              <a class="btn-call-blink" href="tel:09928610202">Call 09928610202</a>
+              <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Studio%20Visit%20%26%20Inquiry%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+              <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Studio%20Visit%20%26%20Inquiry%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="anim-card reveal-item">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=1800&amp;q=85" alt="Home" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div>
+              <span class="section-eyebrow" style="margin-bottom:4px;">Chitrakoot &amp; Vaishali Nagar, Jaipur</span>
+              <h3 class="card-title font-display">Home</h3>
+              <p class="card-text">Royal Navy Blue, Crisp White &amp; Warm Gold Architectural Precision. Bespoke Residences, Heritage Villas &amp; Commercial Landmarks in Jaipur.</p>
+            </div>
+            <div class="card-actions">
+              <a class="card-link-btn" href="index.html">Open Page</a>
+              <a class="btn-call-blink" href="tel:09928610202">Call 09928610202</a>
+              <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Architecture%20%26%20Design%20Consultation%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+              <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Architecture%20%26%20Design%20Consultation%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="anim-card reveal-item">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="About Us" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div>
+              <span class="section-eyebrow" style="margin-bottom:4px;">Akruti Apartments, Chitrakoot, Jaipur</span>
+              <h3 class="card-title font-editorial">About Us</h3>
+              <p class="card-text">Architectural Excellence Across Chitrakoot, Vaishali Nagar &amp; Jaipur. Blending Structural Clarity with Contemporary Spatial Elegance.</p>
+            </div>
+            <div class="card-actions">
+              <a class="card-link-btn" href="about-us.html">Open Page</a>
+              <a class="btn-call-blink" href="tel:09928610202">Call 09928610202</a>
+              <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Studio%20Profile%20%26%20Consultation%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+              <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Studio%20Profile%20%26%20Consultation%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct One-Click Service WhatsApp & SMS Triggers -->
+  <section class="section-block navy-band">
+    <div class="container">
+      <span class="section-eyebrow">Direct One-Click Dispatch</span>
+      <h2 class="section-heading font-grotesk">Instant Service WhatsApp &amp; SMS (09928610202)</h2>
+      <p class="section-lead">
+        Click WhatsApp or SMS on any service below to open your messaging app immediately with the selected service name pre-filled.
+      </p>
+
+      <div class="one-click-grid">
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">Architectural Design</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Architectural%20Design%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Architectural%20Design%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">Interior Design</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Interior%20Design%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Interior%20Design%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">Luxury Villas &amp; Havelis</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Luxury%20Villas%20%26%20Havelis%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Luxury%20Villas%20%26%20Havelis%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">Commercial &amp; Corporate</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Commercial%20%26%20Corporate%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Commercial%20%26%20Corporate%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">Boutique Hotels &amp; Resorts</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Boutique%20Hotels%20%26%20Resorts%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Boutique%20Hotels%20%26%20Resorts%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">Urban &amp; Master Planning</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Urban%20%26%20Master%20Planning%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Urban%20%26%20Master%20Planning%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">Landscape &amp; Courtyards</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Landscape%20%26%20Courtyards%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Landscape%20%26%20Courtyards%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">3D Visualization &amp; BIM</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%203D%20Visualization%20%26%20BIM%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%203D%20Visualization%20%26%20BIM%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">Turnkey Execution</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Turnkey%20Execution%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Turnkey%20Execution%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">Renovation &amp; Facade</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Renovation%20%26%20Facade%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Renovation%20%26%20Facade%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">Bespoke Furniture &amp; Joinery</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Bespoke%20Furniture%20%26%20Joinery%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Bespoke%20Furniture%20%26%20Joinery%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+        <div class="service-quick-tile reveal-item">
+          <div class="service-quick-title">Materials &amp; Stone Library</div>
+          <div class="service-quick-btns">
+            <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Materials%20%26%20Stone%20Library%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+            <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Materials%20%26%20Stone%20Library%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Jaipur Studio Address & Complete 20-Page Directory -->
+  <section class="section-block alt-bg">
+    <div class="container">
+      <div class="jaipur-address-card reveal-item">
+        <div>
+          <span class="section-eyebrow">Jaipur Studio Address</span>
+          <h3 class="card-title font-display" style="margin-bottom:6px;">Mittal Associates &amp; Architecture</h3>
+          <p style="color:var(--text-dark);font-weight:600;">D-6/252, near Vaishali Nagar, Akruti Apartments, Chitrakoot, Jaipur, Jaipur Nagar Nigam Area, Rajasthan 302021</p>
+        </div>
+        <div>
+          <div style="font-size:13.5px;color:var(--text-dark);margin-bottom:6px;"><strong>Mobile &amp; WhatsApp:</strong> 09928610202</div>
+          <div style="font-size:13px;color:var(--text-muted);"><strong>Hours:</strong> Monday – Saturday, 10:00 AM – 7:00 PM</div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-start;">
+          <a class="btn-call-blink" href="tel:09928610202">Call 09928610202</a>
+          <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Studio%20Careers%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp</a>
+          <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Studio%20Careers%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS</a>
+          <a class="btn-map" target="_blank" rel="noopener" href="https://maps.app.goo.gl/PtvAL3n4BeiA9UTv5">Open Map</a>
+        </div>
+      </div>
+
+      <div style="margin-top:46px;">
+        <span class="section-eyebrow">Complete Website</span>
+        <h2 class="section-heading font-grotesk" style="font-size:1.75rem;">Explore All Separate Pages</h2>
+        <div class="all-pages-index">
+          
+        <a class="page-directory-chip" href="index.html">
+          <span>Home</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="about-us.html">
+          <span>About Us</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="architectural-design.html">
+          <span>Architectural Design</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="interior-design.html">
+          <span>Interior Design</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="luxury-villas.html">
+          <span>Luxury Villas &amp; Havelis</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="commercial-spaces.html">
+          <span>Commercial &amp; Corporate</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="hospitality-resorts.html">
+          <span>Boutique Hotels &amp; Resorts</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="urban-planning.html">
+          <span>Urban &amp; Master Planning</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="landscape-architecture.html">
+          <span>Landscape &amp; Courtyards</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="3d-visualization.html">
+          <span>3D Visualization &amp; BIM</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="turnkey-execution.html">
+          <span>Turnkey Execution</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="renovation-restoration.html">
+          <span>Renovation &amp; Facade</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="custom-furniture.html">
+          <span>Bespoke Furniture &amp; Joinery</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="material-library.html">
+          <span>Materials &amp; Stone Library</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="vastu-sustainable.html">
+          <span>Vastu &amp; Green Design</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="portfolio-showcase.html">
+          <span>Jaipur Portfolio</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="process-timeline.html">
+          <span>Design Process</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="client-stories.html">
+          <span>Client Stories</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="careers-studio.html">
+          <span>Careers at Studio</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        <a class="page-directory-chip" href="contact-jaipur.html">
+          <span>Contact &amp; Jaipur Studio</span>
+          <span class="arrow">→</span>
+        </a>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <img src="assets/mittal-associates-original-logo.png" alt="Mittal Associates & Architecture" style="height:42px;border-radius:6px;border:1px solid var(--gold);" />
+          <div>
+            <div style="font-family:'Cinzel',serif;font-weight:700;letter-spacing:0.08em;">MITTAL</div>
+            <div style="font-size:10px;letter-spacing:0.16em;color:var(--gold-light);">ASSOCIATES &amp; ARCHITECTURE</div>
+          </div>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.78);">
+          D-6/252, near Vaishali Nagar, Akruti Apartments, Chitrakoot, Jaipur, Jaipur Nagar Nigam Area, Rajasthan 302021
+        </p>
+      </div>
+
+      <div>
+        <div class="footer-heading">Core Pages</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="architectural-design.html">Architectural Design</a></li>
+          <li><a href="interior-design.html">Interior Design</a></li>
+          <li><a href="portfolio-showcase.html">Jaipur Portfolio</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-heading">Specialized Verticals</div>
+        <ul class="footer-links">
+          <li><a href="luxury-villas.html">Luxury Villas &amp; Havelis</a></li>
+          <li><a href="commercial-spaces.html">Commercial &amp; Corporate</a></li>
+          <li><a href="hospitality-resorts.html">Boutique Hotels &amp; Resorts</a></li>
+          <li><a href="turnkey-execution.html">Turnkey Execution</a></li>
+          <li><a href="contact-jaipur.html">Contact &amp; Jaipur Studio</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-heading">Direct Connect — 09928610202</div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <a class="btn-call-blink" href="tel:09928610202">Call: 09928610202</a>
+          <a class="btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/919928610202?text=Hello%20Mittal%20Associates%20%26%20Architecture%2C%20I%20am%20inquiring%20about%20Studio%20Careers%20at%20D-6/252%2C%20near%20Vaishali%20Nagar%2C%20Akruti%20Apartments%2C%20Chitrakoot%2C%20Jaipur%20302021.">WhatsApp: Studio Careers</a>
+          <a class="btn-sms" href="sms:09928610202?body=Hello%20Mittal%20Associates%20Jaipur%2C%20inquiry%20regarding%20Studio%20Careers%20%28Chitrakoot%20/%20Vaishali%20Nagar%2C%20Jaipur%29.%20Please%20contact%20me.">SMS: Studio Careers</a>
+          <a class="btn-map" target="_blank" rel="noopener" href="https://maps.app.goo.gl/PtvAL3n4BeiA9UTv5">Google Maps Location</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Mittal Associates &amp; Architecture — Jaipur, Rajasthan.</span>
+      <span>D-6/252, near Vaishali Nagar, Akruti Apartments, Chitrakoot, Jaipur 302021</span>
+    </div>
+  </footer>
+
+  <script>
+const STUDIO_PHONE_RAW = "09928610202";
+const STUDIO_PHONE_INTL = "919928610202";
+const STUDIO_TEL_HREF = "tel:09928610202";
+const STUDIO_MAPS_URL = "https://maps.app.goo.gl/PtvAL3n4BeiA9UTv5";
+const STUDIO_ADDRESS_FULL = "D-6/252, near Vaishali Nagar, Akruti Apartments, Chitrakoot, Jaipur, Jaipur Nagar Nigam Area, Rajasthan 302021";
+
+function openPagesDrawer() {
+  const d = document.getElementById("pagesDrawerBackdrop");
+  if (d) d.classList.add("open");
+}
+
+function closePagesDrawer() {
+  const d = document.getElementById("pagesDrawerBackdrop");
+  if (d) d.classList.remove("open");
+}
+
+function initKineticSublines(lines) {
+  const target = document.getElementById("kineticSubline");
+  if (!target || !Array.isArray(lines) || lines.length === 0) return;
+  let idx = 0;
+  target.textContent = lines[0];
+  if (lines.length === 1) return;
+  setInterval(() => {
+    target.style.opacity = "0";
+    target.style.transform = "translateY(8px)";
+    setTimeout(() => {
+      idx = (idx + 1) % lines.length;
+      target.textContent = lines[idx];
+      target.style.opacity = "1";
+      target.style.transform = "translateY(0)";
+    }, 320);
+  }, 3400);
+}
+
+function initCardAnimations() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  document.querySelectorAll(".reveal-item").forEach((el) => observer.observe(el));
+
+  document.querySelectorAll(".anim-card").forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      card.style.transform = `translateY(-8px) rotateX(${(-y * 5).toFixed(2)}deg) rotateY(${(x * 5).toFixed(2)}deg)`;
+    });
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "";
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initCardAnimations();
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closePagesDrawer();
+  });
+});
+</script>
+  <script>
+    initKineticSublines(["Opportunities for Architects, 3D Visualizers & Site Supervisors", "Collaborative Studio at Akruti Apartments, Chitrakoot, Jaipur", "Hands-On Exposure from Concept Sketch to Site Handover"]);
+  </script>
+
+
+<nav class="mobile-app-nav" aria-label="Mobile navigation">
+  <a href="index.html" data-mobile-page="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg><span>Home</span>
+  </a>
+  <button type="button" onclick="openPagesDrawer()" aria-label="Explore services">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M8 7h8M8 11h8"/></svg><span>Explore</span>
+  </button>
+  <a href="portfolio-showcase.html" data-mobile-page="portfolio-showcase.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg><span>Projects</span>
+  </a>
+  <a class="mobile-nav-cta" href="tel:09928610202">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.4 2.8a2 2 0 0 1-.6 1.7L7 10.1a16 16 0 0 0 6 6l1.9-1.9a2 2 0 0 1 1.7-.6l2.8.4a2 2 0 0 1 1.6 1.9Z"/></svg><span>Call</span>
+  </a>
+  <a class="mobile-nav-cta" href="https://wa.me/919928610202" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8Z"/><path d="M8.5 9.5c.5 2 2 3.5 4 4l1-1 2 .8"/></svg><span>WhatsApp</span>
+  </a>
+</nav>
+<script>
+(function () {
+  var current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  document.querySelectorAll('.mobile-app-nav a[data-mobile-page]').forEach(function (link) {
+    if (link.getAttribute('data-mobile-page') === current) link.classList.add('active');
+  });
+})();
+</script>
+
+</body>
+</html>
